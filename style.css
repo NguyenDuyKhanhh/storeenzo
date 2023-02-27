@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: 0.5s;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#000000 50%, #cc7f19 50%);
+}
+
+h1 {
+  font-size: 70px;
+  color: #cc7f19;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.store {
+  width: 550px;
+  border-radius: 10px;
+  background-color: rgb(30, 40, 62);
+}
+.store .card-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.store .card-search input {
+  width: 50%;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 6px 20px;
+  outline: none;
+  color: wheat;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.store .card-search button {
+  width: 18%;
+  padding: 10px 20px;
+  background-color: #cc7f19;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+.store .card-products {
+  overflow-y: scroll;
+  width: 550px;
+  max-height: 500px;
+  background-color: rgb(30, 40, 62);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: 0.5s;
+  border-radius: 0 0 10px 10px;
+}
+.store .card-products h2 {
+  text-align: center;
+  transition: 0.5s;
+}
+.store .card-products .product {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 150px;
+  position: relative;
+  transition: 0.3s;
+}
+.store .card-products .product img {
+  width: 100px;
+  transition: 0.5s;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.store .card-products .product .infor {
+  position: absolute;
+  width: 70%;
+  top: 10px;
+  right: 15px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.store .card-products .product .infor p {
+  font-size: 18px;
+  color: white;
+}
+.store .card-products .product .infor small {
+  font-size: 15px;
+  color: #cc7f19;
+}
+.store .card-products .product .infor span {
+  font-size: 15px;
+  color: #cc7f19;
+}
+.store .card-products .product button {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #cc7f19;
+  padding: 5px 10px;
+}
+.store .card-products .product:hover {
+  background: rgba(128, 128, 128, 0.26);
+}
+.store .card-products::-webkit-scrollbar {
+  width: 5px;
+}
+.store .card-products::-webkit-scrollbar-thumb {
+  background: #cc7f19;
+  border-radius: 10px;
+}
+
+@media (max-width: 739px) {
+  h1 {
+    font-size: 25px;
+  }
+  .store {
+    width: 99%;
+  }
+  .card-products {
+    width: 200px;
+  }
+  .infor {
+    width: 20px;
+  }
+}
+.store .show-detail {
+  position: relative;
+  display: flex;
+}
+.store .show-detail i {
+  margin: 0 0 0 20px;
+  color: white;
+  font-size: 20px;
+}
+.store .show-detail img {
+  width: 30%;
+  margin: 40px 5px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid #cc7f19;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.store .show-detail .detail-infor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 35px 20px;
+}
+.store .show-detail .detail-infor p {
+  color: white;
+  font-size: 20px;
+}
+.store .show-detail .detail-infor small {
+  color: #cc7f19;
+  font-size: 17px;
+}
+.store .show-detail .detail-infor span {
+  color: #cc7f19;
+  font-size: 17px;
+}
+.store .show-detail button {
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #cc7f19;
+  font-weight: 500;
+  background-color: rgba(31, 30, 29, 0.5607843137);
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+.store .show-detail button:hover {
+  color: white;
+  background-color: #cc7f19;
+}/*# sourceMappingURL=style.css.map */
